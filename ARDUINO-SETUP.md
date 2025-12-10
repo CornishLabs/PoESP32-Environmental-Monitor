@@ -6,13 +6,15 @@
 4. Close/save the Preferences window
 5. Open the Boards Manager
    - Type "esp32" in the search field and select "esp32 by Espressif Systems" (__NOT "Arduino ESP32 Boards"__)
-     - Install version 2.0.17
+     - Install version 3.3.4
 6. Open the Libraries Manager
    - Type "sht4x" in the search field and select "Sensirion I2C SHT4x"
-     - Install version 1.1.2
-   - Type "arduino-timer" in the earch field and select "arduino-timer"
+     - Install version 1.1.2. This should also install Sensirion Core version 0.7.2.
+   - Type "arduino-timer" in the search field and select "arduino-timer"
      - Install version 3.0.1
+   - Type "Adafruit" in the search field and select "Adafruit BMP280 Library"
+     - Install version 2.6.8
+   - Type "Adafruit" in the search field and select "Adafruit BMP280 Library"
+     - Install version 2.6.8. This should also install Adafruit Unified Sensor version 1.1.15.
 7. Install the CH9102 USB-to-serial drivers ([Windows](https://learn.adafruit.com/how-to-install-drivers-for-wch-usb-to-serial-chips-ch9102f-ch9102/windows-driver-installation)/[MacOS](https://learn.adafruit.com/how-to-install-drivers-for-wch-usb-to-serial-chips-ch9102f-ch9102/mac-driver-installation))
    - Note: These drivers do not appear to work on MacOS 14.5
-> [!IMPORTANT]
-> Do not allow Arduino IDE to update the esp32 board library to any 3.x version, as there are breaking Ethernet changes in this new release.
