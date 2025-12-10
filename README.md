@@ -1,5 +1,5 @@
 # The ESP32 Environmental Monitor
-![PoESP32 Animated Image](https://github.com/CornishLabs/PoESP32-SNMP-Environmental-Monitor/blob/main/images/PoESP32-Title.gif)
+![PoESP32 Animated Image](https://github.com/CornishLabs/PoESP32-Environmental-Monitor/blob/main/images/PoESP32-Title.gif)
 ## Background
 In our labs, it is important to have monitoring of environmental factors that can affect physics experiments. We choose to use a cheap PoE (power-over-ethernet) ESP32 board to communicate with an enviroment sensor. The readings are then sent over TCP message to a Grafana database which displays and logs them.
 
@@ -11,16 +11,16 @@ In our labs, it is important to have monitoring of environmental factors that ca
 
 ## Programming
 _Once you've successfully programmed a single unit, skip step 1.  Repeating this process takes 5 minutes from start to finish._
-1. [Set up your Arduino programming environment](https://github.com/CornishLabs/PoESP32-SNMP-Environmental-Monitor/blob/main/ARDUINO-SETUP.md)
+1. [Set up your Arduino programming environment](https://github.com/CornishLabs/PoESP32-Environmental-Monitor/blob/main/ARDUINO-SETUP.md)
 2. Disassemble the PoESP32 case
-   - You will need a 1.5mm (M2) allen wrench to remove a single screw [pic](https://github.com/CornishLabs/PoESP32-SNMP-Environmental-Monitor/blob/main/images/1-Allen.jpg)
-   - Inserting a small flat head screwdriver into the slots flanking the Ethernet jack [pic](https://github.com/CornishLabs/PoESP32-SNMP-Environmental-Monitor/blob/main/images/2-Slots.jpg), carefully separate the case halves; work it side by side to avoid damage [pic](https://github.com/CornishLabs/PoESP32-SNMP-Environmental-Monitor/blob/main/images/3-Tabs.jpg)
+   - You will need a 1.5mm (M2) allen wrench to remove a single screw [pic](https://github.com/CornishLabs/PoESP32-Environmental-Monitor/blob/main/images/1-Allen.jpg)
+   - Inserting a small flat head screwdriver into the slots flanking the Ethernet jack [pic](https://github.com/CornishLabs/PoESP32-Environmental-Monitor/blob/main/images/2-Slots.jpg), carefully separate the case halves; work it side by side to avoid damage [pic](https://github.com/CornishLabs/PoESP32-Environmental-Monitor/blob/main/images/3-Tabs.jpg)
 > [!TIP]
 > If you have fingernails, it can be quicker to slide a nail between the case halves, starting with the end opposite the Ethernet port and using another nail to pull the retaining tabs back
 3. In Arduino, open the project file (PoESP32-Grafana.ino)
    - Edit the hostname, IP address, subnet, gateway, SNMP read community, and authorized hosts lists at the very top of the file.
    - Select Tools->Board->esp32 and select "ESP32 Dev Module"
-4. With the USB-to-serial adapter unplugged, insert the pins in the correct orientation on the back of the PoESP32 mainboard [pic](https://github.com/CornishLabs/PoESP32-SNMP-Environmental-Monitor/blob/main/images/4-Programmer.jpg)
+4. With the USB-to-serial adapter unplugged, insert the pins in the correct orientation on the back of the PoESP32 mainboard [pic](https://github.com/CornishLabs/PoESP32-Environmental-Monitor/blob/main/images/4-Programmer.jpg)
 > [!WARNING]
 > Do not plug the PoESP32 device into Ethernet until after step 7 or you risk damaging your USB port! Additionally, Serial communication will fail when the ethernet cable is plugged in.
 5. With light tension applied to ensure good connectivity to the programming through-hole vias on the PoESP32 (see step 4 pic), plug in the USB-to-serial adapter
@@ -38,10 +38,10 @@ _Once you've successfully programmed a single unit, skip step 1.  Repeating this
      Leaving...
      Hard resetting via RTS pin...
 7. Disconnect the USB-to-serial adapter and reassemble the case
-8. Plug in the ENV IV sensor unit [pic](https://github.com/CornishLabs/PoESP32-SNMP-Environmental-Monitor/blob/main/images/5-Assembled.jpg)
+8. Plug in the ENV IV sensor unit [pic](https://github.com/CornishLabs/PoESP32-Environmental-Monitor/blob/main/images/5-Assembled.jpg)
 9. Connect the PoESP32 to a PoE network port and mount as appropriate
    - The holes in the PoESP32 and ENV IV sensor cases work great with zip ties for rack install or screws if attaching to a backboard
-     - See the /3Dmodels folder for print-able mounting plates or [Guidance and Limitations](https://github.com/CornishLabs/PoESP32-SNMP-Environmental-Monitor/blob/main/README.md#guidance-and-limitations) for more detail
+     - See the /3Dmodels folder for print-able mounting plates or [Guidance and Limitations](https://github.com/CornishLabs/PoESP32-Environmental-Monitor/blob/main/README.md#guidance-and-limitations) for more detail
    - Do not mount the ENV IV directly on top of the PoESP32, as it generates enough heat to affect sensor readings
 10. Configure your monitoring platform as appropriate
 
@@ -76,4 +76,4 @@ _Once you've successfully programmed a single unit, skip step 1.  Repeating this
   - IEEE 802.3af Power-over-Ethernet
 - I/O Configuration
   - SHT40 temperature and humidity sensor
-  - See [PORTINFO.md](https://github.com/CornishLabs/PoESP32-SNMP-Environmental-Monitor/blob/main/PORTINFO.md)
+  - See [PORTINFO.md](https://github.com/CornishLabs/PoESP32-Environmental-Monitor/blob/main/PORTINFO.md)

@@ -1,8 +1,8 @@
 /*
 GNU GENERAL PUBLIC LICENSE Version 3, 29 June 2007
-https://github.com/CornishLabs/PoESP32-SNMP-Environmental-Monitor
+https://github.com/CornishLabs/PoESP32-Environmental-Monitor
 
-Libraries and supporting code incorporates other licenses, see https://github.com/CornishLabs/PoESP32-SNMP-Environmental-Monitor/blob/main/LICENSE-3RD-PARTY.md
+Libraries and supporting code incorporates other licenses, see https://github.com/CornishLabs/PoESP32-Environmental-Monitor/blob/main/LICENSE-3RD-PARTY.md
 */
 ////////------------------------------------------- CONFIGURATION SETTINGS AREA --------------------------------------------////////
 
